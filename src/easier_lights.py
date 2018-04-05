@@ -22,6 +22,14 @@ def update():
 def white(level):
     easier_color(level,level,level)
 
+def off():
+    global red
+    global green
+    global blue
+    red = 0
+    green = 0
+    blue = 0
+    update()
 
 def rainbow(do):
     global red
@@ -48,9 +56,7 @@ def rainbow(do):
         update()
         time.sleep(0.005)
 def main():
-    currentLevel = 255
-    doRainbow = True
-    rainbow(doRainbow)
+    off()
 
 
 
